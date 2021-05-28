@@ -1,0 +1,511 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="slideshow-container" > 
+<div class="before-test">
+    <p style="text-align: center;">
+        <em>
+            This ADHD symptom test was adapted from the <a href="https://www.hcp.med.harvard.edu/ncs/asrs.php" target="_blank">ASRS Screener</a> developed by the World Health Organization (WHO) and the Workgroup on Adult ADHD
+        </em>
+    </p>
+</div>
+<form action="{{ url_for('gfg')}}" method="POST" class="row">
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="fname" placeholder="firstname">
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lname" placeholder="lastname">
+    <div class="part-description">
+        <h2>Part A</h2>
+    
+
+    <div class="question-container" id="question1">
+        <p>How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?</p>
+        <label class="question-options"> Never
+            <input type="radio" name="question1"  value="0">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Rarely
+            <input type="radio"  name="question1"  value="0">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Sometimes
+            <input type="radio"  name="question1"  value="1">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Often
+            <input type="radio"  name="question1"  value="1">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Always
+            <input type="radio"  name="question1"   value="1">
+            <span class="checkmark"></span>
+        </label>
+    
+    </div>   
+
+    
+    <div class="question-container" id="question2">
+        <p>How often do you have difficulty getting things in order when you have to do a task that requires organization?</p>
+        <label class="question-options"> Never
+            <input type="radio"  name="question2"  value="0">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Rarely
+            <input type="radio"  name="question2"  value="0">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Sometimes
+            <input type="radio"  name="question2"  value="0">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Often
+            <input type="radio"  name="question2"  value="1">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Always
+            <input type="radio"  name="question2"  value="1">
+            <span class="checkmark"></span>
+        </label>
+    
+    </div>   
+
+
+
+    <div class="question-container" id="question3">
+        <p>How often do you have problems remembering appointments or obligations?</p>
+        <label class="question-options"> Never
+            <input type="radio"  name="question3"  value="0">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Rarely
+            <input type="radio"  name="question3"  value="0">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Sometimes
+            <input type="radio"  name="question3"   value="1">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Often
+            <input type="radio"  name="question3"   value="1">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Always
+            <input type="radio"  name="question3"   value="1">
+            <span class="checkmark"></span>
+        </label>
+        
+    </div>   
+
+
+
+    <div class="question-container" id="question4">
+        <p>When you have a task that requires a lot of thought, how often do you avoid or delay getting started?</p>
+        <label class="question-options"> Never
+            <input type="radio"  name="question4"  value="0">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Rarely
+            <input type="radio"  name="question4"  value="0">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Sometimes
+            <input type="radio"  name="question4"  value="0">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Often
+            <input type="radio"  name="question4"   value="1">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Always
+            <input type="radio"  name="question4"   value="1">
+            <span class="checkmark"></span>
+        </label>
+       
+    </div>   
+
+
+
+    <div class="question-container" id="question5">
+        <p>How often do you fidget or squirm with your hands or feet when you have to sit down for a long time?</p>
+        <label class="question-options"> Never
+            <input type="radio"  name="question5"  value="0">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Rarely
+            <input type="radio"  name="question5"  value="0">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Sometimes
+            <input type="radio"  name="question5"  value="0">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Often
+            <input type="radio"  name="question5"  value="1">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Always
+            <input type="radio"  name="question5"  value="1">
+            <span class="checkmark"></span>
+        </label>
+        
+    </div>   
+
+
+
+    <div class="question-container" id="question6">
+        <p>How often do you feel overly active and compelled to do things, like you were driven by a motor?</p>
+        <label class="question-options"> Never
+            <input type="radio"  name="question6"  value="0">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Rarely
+            <input type="radio"  name="question6"  value="0">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Sometimes
+            <input type="radio"  name="question6"  value="0">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Often
+            <input type="radio"  name="radio"  value="1">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Always
+            <input type="radio"  name="question6"  value="1">
+            <span class="checkmark"></span>
+        </label>
+        
+    </div>   
+</div>
+<div class="part-description">
+    <h2>Part B</h2>
+
+
+<div class="question-container" id="question7">
+    <p>How often do you make careless mistakes when you have to work on a boring or difficult project?</p>
+    <label class="question-options"> Never
+        <input type="radio"  name="question7"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Rarely
+        <input type="radio"  name="question7"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Sometimes
+        <input type="radio"  name="question7"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Often
+        <input type="radio"  name="question7"  value="1">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Always
+        <input type="radio"  name="question7"  value="1">
+        <span class="checkmark"></span>
+    </label>
+
+     
+</div>
+
+
+<div class="question-container" id="question8">
+    <p> How often do you have difficulty keeping your attention when you are doing boring or repetitive work?</p>
+    <label class="question-options"> Never
+        <input type="radio"  name="question8"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Rarely
+        <input type="radio"  name="question8"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Sometimes
+        <input type="radio"  name="question8"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Often
+        <input type="radio"  name="question8"  value="1">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Always
+        <input type="radio"  name="question8"  value="1">
+        <span class="checkmark"></span>
+    </label>
+
+     
+</div>
+
+
+<div class="question-container" id="question9">
+    <p>How often do you have difficulty concentrating on what people say to you, even when they are speaking to you directly?</p>
+    <label class="question-options"> Never
+        <input type="radio"  name="question9"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Rarely
+        <input type="radio"  name="question9"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Sometimes
+        <input type="radio"  name="question9"  value="1">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Often
+        <input type="radio"  name="question9"  value="1">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Always
+        <input type="radio"  name="question9"  value="1">
+        <span class="checkmark"></span>
+    </label>
+
+</div>   
+
+
+
+<div class="question-container" id="question10">
+    <p>How often do you misplace or have difficulty finding things at home or at work?</p>
+    <label class="question-options"> Never
+        <input type="radio"  name="question10"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Rarely
+        <input type="radio"  name="question10"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Sometimes
+        <input type="radio"  name="question10"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Often
+        <input type="radio"  name="question10"  value="1">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Always
+        <input type="radio"  name="question10"  value="1">
+        <span class="checkmark"></span>
+    </label>
+
+</div>   
+
+
+
+<div class="question-container" id="question11">
+    <p>How often are you distracted by activity or noise around you?</p>
+    <label class="question-options"> Never
+        <input type="radio"  name="question11"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Rarely
+        <input type="radio"  name="question11"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Sometimes
+        <input type="radio"  name="question11"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Often
+        <input type="radio"  name="question11"  value="1">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Always
+        <input type="radio"  name="question11"  value="1">
+        <span class="checkmark"></span>
+    </label>
+
+</div>   
+
+
+
+<div class="question-container" id="question12">
+    <p>How often do you leave your seat in meetings or other situations in which you are expected to remain seated?</p>
+    <label class="question-options"> Never
+        <input type="radio"  name="question12"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Rarely
+        <input type="radio"  name="question12"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Sometimes
+        <input type="radio"  name="question12"  value="1">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Often
+        <input type="radio"  name="question12"  value="1">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Always
+        <input type="radio"  name="question12"  value="1">
+        <span class="checkmark"></span>
+    </label>
+
+</div>   
+
+
+
+<div class="question-container" id="question13">
+    <p>How often do you feel restless or fidgety?</p>
+    <label class="question-options"> Never
+        <input type="radio"  name="question13"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Rarely
+        <input type="radio"  name="question13"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Sometimes
+        <input type="radio"  name="question13"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Often
+        <input type="radio"  name="question13"  value="1">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Always
+        <input type="radio"  name="question13"  value="1">
+        <span class="checkmark"></span>
+    </label>
+
+</div>   
+
+
+
+<div class="question-container" id="question14">
+    <p>How often do you have difficulty unwinding and relaxing when you have time to yourself?</p>
+    <label class="question-options"> Never
+        <input type="radio"  name="question14"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Rarely
+        <input type="radio"  name="question14"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Sometimes
+        <input type="radio"  name="question14"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Often
+        <input type="radio"  name="question14"  value="1">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Always
+        <input type="radio"  name="question14"  value="1">
+        <span class="checkmark"></span>
+    </label>
+
+</div>   
+
+
+
+<div class="question-container" id="question15">
+    <p>How often do you find yourself talking too much when you are in social situations?</p>
+    <label class="question-options"> Never
+        <input type="radio"  name="question15"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Rarely
+        <input type="radio"  name="question15"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Sometimes
+        <input type="radio"  name="question15"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Often
+        <input type="radio"  name="question15"  value="1">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Always
+        <input type="radio"  name="question15"  value="1">
+        <span class="checkmark"></span>
+    </label>
+
+</div>   
+
+
+
+<div class="question-container" id="question16">
+    <p>When you’re in a conversation, how often do you find yourself finishing the sentences of the people you are talking to, before they can finish them themselves?</p>
+    <label class="question-options"> Never
+        <input type="radio"  name="question16"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Rarely
+        <input type="radio"  name="question16"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Sometimes
+        <input type="radio"  name="question16"  value="1">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Often
+        <input type="radio"  name="question16"  value="1">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Always
+        <input type="radio"  name="question16"  value="1">
+        <span class="checkmark"></span>
+    </label>
+
+     
+</div>
+
+
+<div class="question-container" id="question17">
+    <p>How often do you have difficulty waiting your turn in situations when turn taking is required?</p>
+    <label class="question-options"> Never
+        <input type="radio"  name="question17"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Rarely
+        <input type="radio"  name="question17"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Sometimes
+        <input type="radio"  name="question17"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Often
+        <input type="radio"  name="question17"  value="1">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Always
+        <input type="radio"  name="question17"  value="1">
+        <span class="checkmark"></span>
+    </label>
+
+     
+</div>
+
+
+<div class="question-container" id="question18">
+    <p> How often do you interrupt others when they are busy?</p>
+    <label class="question-options"> Never
+        <input type="radio"  name="question18"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Rarely
+        <input type="radio"  name="question18"  value="0">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Sometimes
+        <input type="radio"  name="question18"  value="1">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Often
+        <input type="radio"  name="question18"  value="1">
+        <span class="checkmark"></span>
+    </label>
+    <label class="question-options"> Always
+        <input type="radio"  name="question18"  value="1">
+        <span class="checkmark"></span>
+    </label>
+</div>
+
+
+ 
+</div>
+    
+    <button type="submit">Login</button>
+</form>
+</div>
+{% endblock %}

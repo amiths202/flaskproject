@@ -1,0 +1,154 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="container">
+<form method="POST" action="{{ url_for('adhd_children')}}" class="row">
+
+    <div class="question-container">
+        <p>Give us some basic information..</p>
+        <label class="question-options"> Age</label>
+        <input type="number"  name="age">
+    </div>
+
+    <div class="question-container" id="question1">
+        <p>Is the child very easily distracted?</p>
+        <label class="question-options"> No
+            <input type="radio"  name="1"  value="No" required>
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Sometimes
+            <input type="radio"  name="1"  value="Sometimes">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Yes
+            <input type="radio"  name="1"  value="Yes">
+            <span class="checkmark"></span>
+    </div>
+
+    <div class="question-container" id="question2">
+        <p>Does the child often make careless mistake and not follow instructions?</p>
+        <label class="question-options"> No
+            <input type="radio"  name="2"  value="No" required>
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Sometimes
+            <input type="radio"  name="2"  value="Sometimes">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Yes
+            <input type="radio"  name="2"  value="Yes">
+            <span class="checkmark"></span>
+    </div>
+
+    <div class="question-container" id="question3">
+        <p>Does the child daydream often? </p>
+        <label class="question-options"> No
+            <input type="radio"  name="3"  value="No" required>
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Sometimes
+            <input type="radio"  name="3"  value="Sometimes">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Yes
+            <input type="radio"  name="3"  value="Yes">
+            <span class="checkmark"></span>
+    </div>
+
+    <div class="question-container" id="question4">
+        <p>Does the child have trouble playing quietly?</p>
+        <label class="question-options"> No
+            <input type="radio"  name="4"  value="No" required>
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Sometimes
+            <input type="radio"  name="4"  value="Sometimes">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Yes
+            <input type="radio"  name="4"  value="Yes">
+            <span class="checkmark"></span>
+    </div>
+
+    <div class="question-container" id="question5">
+        <p>Does the child seem very fidgety?</p>
+        <label class="question-options"> No
+            <input type="radio"  name="5"  value="No" required>
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Sometimes
+            <input type="radio"  name="5"  value="Sometimes">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Yes
+            <input type="radio"  name="5"  value="Yes">
+            <span class="checkmark"></span>
+    </div>
+
+    <div class="question-container" id="question6">
+        <p>Does the child lose things often?</p>
+        <label class="question-options"> No
+            <input type="radio"  name="6"  value="No" required>
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Sometimes
+            <input type="radio"  name="6"  value="Sometimes">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Yes
+            <input type="radio"  name="6"  value="Yes">
+            <span class="checkmark"></span>
+    </div>
+
+    <div class="question-container" id="question7">
+        <p>Does the child often interrupt others/ blurt out answers?</p>
+        <label class="question-options"> No
+            <input type="radio"  name="7"  value="No" required>
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Sometimes
+            <input type="radio"  name="7"  value="Sometimes">
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Yes
+            <input type="radio"  name="7"  value="Yes">
+            <span class="checkmark"></span>
+    </div>
+
+    <div class="question-container" id="question8">
+        <p>Was the child premature?</p>
+        <label class="question-options"> No
+            <input type="radio"  name="8"  value="No" required>
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Yes
+            <input type="radio"  name="8"  value="Yes">
+            <span class="checkmark"></span>
+    </div>
+
+    <div class="question-container" id="question9">
+        <p>Did the mother smoke/drink during pregnancy?</p>
+        <label class="question-options"> No
+            <input type="radio"  name="9"  value="No" required>
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Yes
+            <input type="radio"  name="9"  value="Yes">
+            <span class="checkmark"></span>
+    </div>
+
+    <div class="question-container" id="question10">
+        <p>Does anyone in the immediate family have ADHD/ADD?</p>
+        <label class="question-options"> No
+            <input type="radio"  name="10"  value="No" required>
+            <span class="checkmark"></span>
+        </label>
+        <label class="question-options"> Yes
+            <input type="radio"  name="10"  value="Yes">
+            <span class="checkmark"></span>
+    </div>
+    
+    <button type="submit" id="submit-button">Get Results</button>                                      
+
+</form>
+</div>
+{% endblock %}

@@ -1,0 +1,235 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #CAEFD1;
+}
+
+
+header nav{
+  text-align: right;
+  background: #000000;
+  color: white;
+}
+
+header nav ul{
+  margin: 0;
+ padding: 0;
+ list-style: none;
+ display: block;
+ line-height: 50px;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+
+
+
+
+
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+ }
+
+
+ .before-test{
+  font-family: Helvetica, Arial,  sans-serif;
+   background: #CAF4F4;
+   padding: 25px;
+   border-radius: 5px;
+ }
+
+ .before-test a{
+   text-decoration: none;
+ }
+
+ .question-container{
+   padding: 10px 25px 10px 30px;
+   margin: 20px;
+   background: #FCFFE9;
+   border-radius: 5px;
+   font-family: Helvetica, Arial,  sans-serif;
+ }
+
+ .question-container:hover{
+   box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
+ }
+
+ .question-container p{
+  font-size: 25px;
+  margin: 10px 0;
+  padding: 5px;
+ }
+
+ .question-container input[type=email], .question-container input[type=number]{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+}
+
+ .part-description{
+  padding: 20px;
+ }
+
+ .part-description h2{
+  margin: 20px 0 0 0; 
+  padding: 10px;
+   position: relative;
+   font-family: Helvetica, Arial, sans-serif;
+   text-transform: uppercase;
+   border: solid 10px #FCFFE9 ;
+   top: -20px;
+ }
+
+
+
+
+  /* Customize the label (the container) */
+.question-options {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+/* Hide the browser's default radio button */
+.question-options input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.question-options:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.question-options input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.question-options input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.question-options .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+
+button{
+  display: block;
+  font-size: 22px;
+  background: #2196F3;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button:hover{
+  background: #5aadf0;
+}
+
+
+.result-description{
+  padding: 25px;
+  margin: 20px;
+  background: white;
+  border-radius: 10px;
+}
+.result-description p, .result-description em{
+  text-align: center;
+  font-family: Helvetica, Arial;
+  font-size: 20px;
+}
+
+.lead{
+  color: red;
+}
+
+.result-description a{
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  background: #632b6c;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 10px 0 10px 0;
+}
+
+.result-description a:hover{
+  background: #6b4870;
+  color: #fff;
+}
+
+.image-container{
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+

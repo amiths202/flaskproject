@@ -1,0 +1,14 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="container">
+    <div class="result-description">
+        <p>You scored <strong class="lead">{{data.value}}</strong> out of posssible <strong>{{data.total}}</strong></p>
+        <p>Still not sure about your scores? Take up our more comprehensive test </p>
+        <br>
+        <hr>
+        <br>
+        <a href="{{ url_for('comprehensive_test') }}">Take up test Now</a>
+    </div>
+    
+</div>
+{% endblock %}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <style>
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: Helvetica, Arial;
+        }
+
+        a:link{
+            color: white;
+        }
+
+        a:visited{
+            color: white;
+        }
+
+        a:hover{
+            color: rgb(219, 217, 217);
+        }
+    </style>
+    <title>ADHD Preliminary Test</title>
+</head>
+<body>
+    
+        <header id="navigation">
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home')}}" id="id-home">Home</a></li>
+                    <li><a href="{{ url_for('about')}}" id="id-about">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        
+            {% block content%}
+            {% endblock %}
+        
+    </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADHD Test Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <style>
+        body{
+            background-image: url("{{ url_for('static', filename='images/banner.jpg') }}");
+        }
+        .centered {
+            padding: 20px 40px;
+            margin: 10px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: rgba(255, 255, 255, 0.5);
+          font-family: Helvetica, Arial,  sans-serif;
+          font-size: 20px;
+        }
+
+        .centered p, .centered blockquote{
+            font-family: Helvetica, Arial,  sans-serif;
+            font-size: 20px;
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+        }
+
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: Helvetica, Arial;
+        }
+
+        a:link{
+            color: white;
+        }
+
+        a:visited{
+            color: white;
+        }
+
+        a:hover{
+            color: rgb(219, 217, 217);
+        }
+
+        .bottom-left a{
+            text-transform: none;
+            text-decoration: underline;
+            font-family: Helvetica, Arial;
+        }
+
+        .bottom-left a:link{
+            color: black;
+        }
+        .bottom-left a:visited{
+            color: black;
+        }
+        .bottom-left a:hover{
+            color: rgb(36, 36, 36);
+        }
+
+        .centered button{
+            border: none;
+            background: #62b1f1;
+            margin: 15px 30px;
+        }
+        .centered button:hover{
+            border: none;
+            background: #98c5e9;
+        }
+        
+        .centered button a{
+            color: #000;
+        }
+        .middle-buttons{
+            text-align: center;
+        }
+        .middle-buttons p{
+            margin: 10px 0;
+        }
+        #adult,#child{
+            display: inline-block;
+            margin: 5px 20px;
+        }
+        </style>
+
+</head>
+    <body>
+    
+        <header class="navigation-header">
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home')}}" id="id-home">Home</a></li>
+                    <li><a href="{{ url_for('about')}}" id="id-about">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+            <div class="centered">
+                  <p>According to CDC's website, </p>
+                  <blockquote cite="https://www.cdc.gov/ncbddd/adhd/facts.html">
+                      ADHD is one of the most common neurodevelopmental disorders of childhood. It is usually first diagnosed in childhood and often lasts into adulthood. Children with ADHD may have trouble paying attention, controlling impulsive behaviors (may act without thinking about what the result will be), or be overly active.
+                  </blockquote>
+                  <br>
+                  <hr>
+                  <br>
+                  <div class="middle-buttons">
+                    <p><strong>Take our test</strong></p>    
+                        <button id="adult"><a href="{{url_for('adhd_adult')}}">Adults</a></button>
+                        <button id="child"><a href="{{url_for('adhd_children')}}">Children</a></button>
+                  </div>
+            </div>
+
+            
+            
+                    
+
+            <div class="bottom-left">
+                Photo by <a href="https://unsplash.com/@bruno_nascimento?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bruno Nascimento</a> on <a href="https://unsplash.com/s/photos/distracted?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+
+    </body>
+</html>
